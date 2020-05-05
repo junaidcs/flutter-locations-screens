@@ -5,7 +5,6 @@ import '../../models/location.dart';
 
 // screens
 import '../../main.dart';
-// import '../../main.dart';
 import './single-location.dart';
 
 class Locations extends StatelessWidget {
@@ -23,7 +22,10 @@ class Locations extends StatelessWidget {
               .map(
                 (location) => GestureDetector(
                   onTap: () => _onTabLocation(context, location.id),
-                  child: SingleLocation(location.title, location.imagePath),
+                  child: Container(
+                    height: 250.0,
+                    child: SingleLocation(location.title, location.imagePath),
+                  ),
                 ),
               )
               .toList()

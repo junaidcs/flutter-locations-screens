@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       onGenerateRoute: _routes(),
       title: "Locations App",
-      home: Locations()
+      // home: Locations()
     );
   }
 
